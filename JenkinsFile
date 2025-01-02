@@ -43,7 +43,7 @@ pipeline {
             steps{
                 script{
                     powershell """
-                        \$imageId = docker images -q ${$DOCKER_IMAGE}
+                        \$imageId = docker images -q ${DOCKER_IMAGE}
                         if (\$imageId){
                             echo "Removing existing image: \$imageId"
                             docker rmi \$imageId -f
