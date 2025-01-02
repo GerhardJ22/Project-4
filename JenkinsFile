@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'jonajaa/jfc:latest'
+        DOCKER_IMAGE = 'gerhardj22/jfc:latest'
         CONTAINER_NAME = 'jfc'
         PORT_MAPPING = '8089:80'  // adjust the port mapping as needed
         AUTHOR1 = "Muhammad Azhar Najib"
